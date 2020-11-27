@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D44A97424365B1B0013E3D6 /* JanusHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44A97024365B1B0013E3D6 /* JanusHandle.swift */; };
+		3D44A97524365B1B0013E3D6 /* RTCSessionDescription+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44A97124365B1B0013E3D6 /* RTCSessionDescription+JSON.swift */; };
+		3D44A97624365B1B0013E3D6 /* JanusConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44A97224365B1B0013E3D6 /* JanusConnection.swift */; };
+		3D44A97724365B1B0013E3D6 /* JanusTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D44A97324365B1B0013E3D6 /* JanusTransaction.swift */; };
+		3D6CD0EC2436537E00E3F61B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CD0EB2436537E00E3F61B /* AppDelegate.swift */; };
+		3D6CD0EE2436537E00E3F61B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CD0ED2436537E00E3F61B /* SceneDelegate.swift */; };
+		3D6CD0F02436537E00E3F61B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CD0EF2436537E00E3F61B /* ViewController.swift */; };
+		3D6CD0F32436537E00E3F61B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6CD0F12436537E00E3F61B /* Main.storyboard */; };
+		3D6CD0F52436538100E3F61B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6CD0F42436538100E3F61B /* Assets.xcassets */; };
+		3D6CD0F82436538100E3F61B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6CD0F62436538100E3F61B /* LaunchScreen.storyboard */; };
+		3D6CD1022436543B00E3F61B /* JanusSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CD1002436543B00E3F61B /* JanusSocket.swift */; };
+		75ED7157076AFED4A2706ADA /* Pods_Janus_Video_Room.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB36BBFBDBA83EE064C23DD /* Pods_Janus_Video_Room.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1355DCE62A21779FB0B688E6 /* Pods-Janus-Video-Room.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Janus-Video-Room.release.xcconfig"; path = "Target Support Files/Pods-Janus-Video-Room/Pods-Janus-Video-Room.release.xcconfig"; sourceTree = "<group>"; };
+		3D44A97024365B1B0013E3D6 /* JanusHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanusHandle.swift; sourceTree = "<group>"; };
+		3D44A97124365B1B0013E3D6 /* RTCSessionDescription+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RTCSessionDescription+JSON.swift"; sourceTree = "<group>"; };
+		3D44A97224365B1B0013E3D6 /* JanusConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanusConnection.swift; sourceTree = "<group>"; };
+		3D44A97324365B1B0013E3D6 /* JanusTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanusTransaction.swift; sourceTree = "<group>"; };
+		3D6CD0E82436537E00E3F61B /* Janus-Video-Room.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Janus-Video-Room.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6CD0EB2436537E00E3F61B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D6CD0ED2436537E00E3F61B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D6CD0EF2436537E00E3F61B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D6CD0F22436537E00E3F61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D6CD0F42436538100E3F61B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D6CD0F72436538100E3F61B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D6CD0F92436538100E3F61B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6CD1002436543B00E3F61B /* JanusSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JanusSocket.swift; sourceTree = "<group>"; };
+		7AB36BBFBDBA83EE064C23DD /* Pods_Janus_Video_Room.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Janus_Video_Room.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1610A3FADD2CFF7D6E2E0C7 /* Pods-Janus-Video-Room.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Janus-Video-Room.debug.xcconfig"; path = "Target Support Files/Pods-Janus-Video-Room/Pods-Janus-Video-Room.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D6CD0E52436537E00E3F61B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75ED7157076AFED4A2706ADA /* Pods_Janus_Video_Room.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CCA7C35113C24DF2CF805E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AB36BBFBDBA83EE064C23DD /* Pods_Janus_Video_Room.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D6CD0DF2436537E00E3F61B = {
+			isa = PBXGroup;
+			children = (
+				3D6CD0EA2436537E00E3F61B /* Janus-Video-Room */,
+				3D6CD0E92436537E00E3F61B /* Products */,
+				9935B5788ACDA84DCB41CB37 /* Pods */,
+				0CCA7C35113C24DF2CF805E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D6CD0E92436537E00E3F61B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D6CD0E82436537E00E3F61B /* Janus-Video-Room.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D6CD0EA2436537E00E3F61B /* Janus-Video-Room */ = {
+			isa = PBXGroup;
+			children = (
+				3D6CD0EB2436537E00E3F61B /* AppDelegate.swift */,
+				3D44A97224365B1B0013E3D6 /* JanusConnection.swift */,
+				3D44A97024365B1B0013E3D6 /* JanusHandle.swift */,
+				3D44A97324365B1B0013E3D6 /* JanusTransaction.swift */,
+				3D44A97124365B1B0013E3D6 /* RTCSessionDescription+JSON.swift */,
+				3D6CD0ED2436537E00E3F61B /* SceneDelegate.swift */,
+				3D6CD1002436543B00E3F61B /* JanusSocket.swift */,
+				3D6CD0EF2436537E00E3F61B /* ViewController.swift */,
+				3D6CD0F12436537E00E3F61B /* Main.storyboard */,
+				3D6CD0F42436538100E3F61B /* Assets.xcassets */,
+				3D6CD0F62436538100E3F61B /* LaunchScreen.storyboard */,
+				3D6CD0F92436538100E3F61B /* Info.plist */,
+			);
+			path = "Janus-Video-Room";
+			sourceTree = "<group>";
+		};
+		9935B5788ACDA84DCB41CB37 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1610A3FADD2CFF7D6E2E0C7 /* Pods-Janus-Video-Room.debug.xcconfig */,
+				1355DCE62A21779FB0B688E6 /* Pods-Janus-Video-Room.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D6CD0E72436537E00E3F61B /* Janus-Video-Room */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D6CD0FC2436538100E3F61B /* Build configuration list for PBXNativeTarget "Janus-Video-Room" */;
+			buildPhases = (
+				DD807B5B673A54E846143782 /* [CP] Check Pods Manifest.lock */,
+				3D6CD0E42436537E00E3F61B /* Sources */,
+				3D6CD0E52436537E00E3F61B /* Frameworks */,
+				3D6CD0E62436537E00E3F61B /* Resources */,
+				20B169C40E77A8775602B711 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Janus-Video-Room";
+			productName = "Janus-Video-Room";
+			productReference = 3D6CD0E82436537E00E3F61B /* Janus-Video-Room.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D6CD0E02436537E00E3F61B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Amirali Asvadi";
+				TargetAttributes = {
+					3D6CD0E72436537E00E3F61B = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 3D6CD0E32436537E00E3F61B /* Build configuration list for PBXProject "Janus-Video-Room" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D6CD0DF2436537E00E3F61B;
+			productRefGroup = 3D6CD0E92436537E00E3F61B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D6CD0E72436537E00E3F61B /* Janus-Video-Room */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D6CD0E62436537E00E3F61B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D6CD0F82436538100E3F61B /* LaunchScreen.storyboard in Resources */,
+				3D6CD0F52436538100E3F61B /* Assets.xcassets in Resources */,
+				3D6CD0F32436537E00E3F61B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B169C40E77A8775602B711 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Janus-Video-Room/Pods-Janus-Video-Room-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Janus-Video-Room/Pods-Janus-Video-Room-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Janus-Video-Room/Pods-Janus-Video-Room-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD807B5B673A54E846143782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Janus-Video-Room-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D6CD0E42436537E00E3F61B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D44A97724365B1B0013E3D6 /* JanusTransaction.swift in Sources */,
+				3D44A97624365B1B0013E3D6 /* JanusConnection.swift in Sources */,
+				3D6CD0F02436537E00E3F61B /* ViewController.swift in Sources */,
+				3D6CD1022436543B00E3F61B /* JanusSocket.swift in Sources */,
+				3D44A97424365B1B0013E3D6 /* JanusHandle.swift in Sources */,
+				3D6CD0EC2436537E00E3F61B /* AppDelegate.swift in Sources */,
+				3D44A97524365B1B0013E3D6 /* RTCSessionDescription+JSON.swift in Sources */,
+				3D6CD0EE2436537E00E3F61B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D6CD0F12436537E00E3F61B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6CD0F22436537E00E3F61B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D6CD0F62436538100E3F61B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D6CD0F72436538100E3F61B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D6CD0FA2436538100E3F61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D6CD0FB2436538100E3F61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D6CD0FD2436538100E3F61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1610A3FADD2CFF7D6E2E0C7 /* Pods-Janus-Video-Room.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADZ5B8BNHN;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Janus-Video-Room/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.am4ze.janus-swift.Janus-Video-Room";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D6CD0FE2436538100E3F61B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1355DCE62A21779FB0B688E6 /* Pods-Janus-Video-Room.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADZ5B8BNHN;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Janus-Video-Room/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cloud.am4ze.janus-swift.Janus-Video-Room";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D6CD0E32436537E00E3F61B /* Build configuration list for PBXProject "Janus-Video-Room" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6CD0FA2436538100E3F61B /* Debug */,
+				3D6CD0FB2436538100E3F61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D6CD0FC2436538100E3F61B /* Build configuration list for PBXNativeTarget "Janus-Video-Room" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6CD0FD2436538100E3F61B /* Debug */,
+				3D6CD0FE2436538100E3F61B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D6CD0E02436537E00E3F61B /* Project object */;
+}

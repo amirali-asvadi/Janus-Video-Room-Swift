@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bSV-wL-C1a">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="18C-zv-X3B">
+            <objects>
+                <viewController id="bSV-wL-C1a" customClass="ViewController" customModule="Janus_Video_Room" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rcd-uv-SQB"/>
+                        <viewControllerLayoutGuide type="bottom" id="UZu-Kz-Aao"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MUT-j4-aXi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8p-fx-OiL" customClass="RTCEAGLVideoView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvS-yM-NMP">
+                                <rect key="frame" x="0.0" y="40" width="90" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="OfA-fg-3EZ"/>
+                                    <constraint firstAttribute="height" constant="57" id="eer-Jx-SEI"/>
+                                </constraints>
+                                <state key="normal" title="Toggle Video"/>
+                                <connections>
+                                    <action selector="videoButtonTapped:" destination="bSV-wL-C1a" eventType="touchUpInside" id="xOn-ft-F5k"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrn-2b-0Gb" customClass="RTCCameraPreviewView">
+                                <rect key="frame" x="20" y="691.5" width="120" height="162.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fxK-td-NxT"/>
+                                    <constraint firstAttribute="height" constant="162.5" id="tce-84-Zgb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u8p-fx-OiL" secondAttribute="trailing" id="VBi-Wy-fHL"/>
+                            <constraint firstItem="u8p-fx-OiL" firstAttribute="top" secondItem="rcd-uv-SQB" secondAttribute="bottom" constant="-44" id="YIv-Y4-OXX"/>
+                            <constraint firstItem="UZu-Kz-Aao" firstAttribute="top" secondItem="u8p-fx-OiL" secondAttribute="bottom" constant="-34" id="YPd-zr-z82"/>
+                            <constraint firstItem="UZu-Kz-Aao" firstAttribute="top" secondItem="wrn-2b-0Gb" secondAttribute="bottom" constant="8" id="dcR-Lp-zIN"/>
+                            <constraint firstItem="wrn-2b-0Gb" firstAttribute="leading" secondItem="MUT-j4-aXi" secondAttribute="leadingMargin" id="mWT-bW-9QO"/>
+                            <constraint firstItem="u8p-fx-OiL" firstAttribute="leading" secondItem="MUT-j4-aXi" secondAttribute="leading" id="pH9-5L-qpF"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gvS-yM-NMP" secondAttribute="trailing" constant="20" symbolic="YES" id="q10-RI-YGZ"/>
+                            <constraint firstItem="gvS-yM-NMP" firstAttribute="leading" secondItem="MUT-j4-aXi" secondAttribute="leading" id="skU-6D-uEE"/>
+                            <constraint firstItem="gvS-yM-NMP" firstAttribute="top" secondItem="MUT-j4-aXi" secondAttribute="top" constant="40" id="wQm-p1-kxx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1tP-Q6-G5N"/>
+                    <connections>
+                        <outlet property="localView" destination="wrn-2b-0Gb" id="l2T-Lh-JcS"/>
+                        <outlet property="remoteView" destination="u8p-fx-OiL" id="LHT-xd-iGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aye-CU-oPW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3608.8000000000002" y="74.630541871921181"/>
+        </scene>
+    </scenes>
+</document>
